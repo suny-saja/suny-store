@@ -97,7 +97,7 @@ const cartReducer = (state: CartState, action: CartAction): CartState => {
 
     default:
       // Kalau ada aksi yang tidak dikenali, tampilkan error
-      throw new Error(`Unhandled action type: ${action.type}`);
+      throw new Error(`Unhandled action type: ${(action as CartAction).type}`);
   }
 };
 

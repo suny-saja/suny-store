@@ -20,7 +20,7 @@ interface Product {
 // Komponen utama halaman pencarian
 export const SearchPage: React.FC = () => {
   // Menyimpan data produk yang diambil
-  const { cart, addToCart } = useCart(); // Mengambil data keranjang dan fungsi untuk menambah produk ke keranjang
+  const { addToCart } = useCart(); // Mengambil data keranjang dan fungsi untuk menambah produk ke keranjang
   const [products, setProducts] = useState<Product[]>([]); // State untuk menyimpan produk yang diambil dari API
   const location = useLocation(); // Mengambil informasi URL saat ini
   const { searchQuery } = useSearch(); // Mengambil query pencarian yang ada di Context
@@ -62,7 +62,7 @@ export const SearchPage: React.FC = () => {
               <CardProduct
                 key={product.id} // Menggunakan id produk sebagai key
                 {...product} // Menyebarkan properti produk sebagai props untuk ProductCard
-                onAddToCart={() => addToCart(product.id)} // Fungsi untuk menambah produk ke keranjang
+                onAddToCart={() => addToCart(product)} // Fungsi untuk menambah produk ke keranjang
               />
             ))
           ) : (

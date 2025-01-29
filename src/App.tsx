@@ -2,12 +2,7 @@ import { Homepage } from './components/HomePage/HomePage';
 import { Checkout } from './components/CheckOut/Checkout';
 import { SearchPage } from './components/SearchPage/SearchPage';
 import { CartProvider } from './components/Context/cartContext';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  BrowserRouter,
-} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { SearchProvider } from './components/Context/searchContext';
 
 function App() {
