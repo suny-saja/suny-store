@@ -1,0 +1,100 @@
+/* components/ui/Button.module.scss */
+.btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  &:focus {
+    outline: 3px solid #e88d3e;
+  }
+}
+
+.btn-primary {
+  background-color: #b8855b;
+  color: white;
+
+  &:hover {
+    background-color: #e88d3e;
+  }
+
+  &:active {
+    background-color: #e88d3e;
+  }
+
+  &:disabled {
+    background-color: #dcdcdc;
+    cursor: not-allowed;
+  }
+}
+
+.btn-secondary {
+  background-color: #f1f1f1;
+  color: #333;
+  border: 2px solid #ddd;
+
+  &:hover {
+    background-color: #f4f4f4;
+  }
+
+  &:active {
+    background-color: #e0e0e0;
+  }
+
+  &:disabled {
+    background-color: #f9f9f9;
+    cursor: not-allowed;
+  }
+}
+
+.btn-danger {
+  background-color: #f44336;
+  color: white;
+
+  &:hover {
+    background-color: #e53935;
+  }
+
+  &:active {
+    background-color: #d32f2f;
+  }
+
+  &:disabled {
+    background-color: #f8d7da;
+    cursor: not-allowed;
+  }
+}
+
+.btn-outlined {
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #333;
+
+  &:hover {
+    background-color: #333;
+    color: white;
+  }
+
+  &:active {
+    background-color: #444;
+    color: white;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    color: #b3b3b3;
+    border: 2px solid #b3b3b3;
+    cursor: not-allowed;
+  }
+}
+
+.btn-disabled {
+  opacity: 0.5;
+}

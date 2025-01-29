@@ -1,0 +1,147 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #c65d3a;
+  color: #fff;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    height: 64px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 36px;
+      cursor: pointer;
+    }
+  }
+
+  .searchBar {
+    display: flex;
+    flex: 1;
+    margin: 0 16px;
+
+    input {
+      flex: 1;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px 0 0 4px;
+      outline: none;
+    }
+
+    button {
+      padding: 8px 16px;
+      background-color: #fff;
+      color: #c65d3a;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #e4b895;
+      }
+    }
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+
+    .menuItem {
+      margin-right: 16px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #d9f7e0;
+      }
+    }
+
+    .cartIcon {
+      position: relative;
+      cursor: pointer;
+      font-size: 20px;
+      color: #fff;
+
+      .cartCount {
+        position: absolute;
+        top: -6px;
+        right: -6px;
+        background: #ff6b6b;
+        color: #fff;
+        font-size: 12px;
+        font-weight: bold;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .cartDropdown {
+    position: absolute;
+    top: 64px;
+    right: 16px;
+    background: #fff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 16px;
+    z-index: 200;
+
+    p {
+      font-size: 14px;
+      margin: 0 0 8px 0;
+    }
+
+    .cartItem {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        margin-right: 12px;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          margin: 0;
+          font-size: 14px;
+        }
+
+        p:last-child {
+          color: #c97822;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

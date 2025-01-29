@@ -1,0 +1,141 @@
+.checkoutPage {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+  h2 {
+    font-size: 24px;
+    color: #333;
+  }
+}
+
+.cartItems {
+  margin: 2rem 0;
+  .cartItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    .itemImage {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .itemDetails {
+      flex: 1;
+      margin-left: 1rem;
+
+      .itemTitle {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 0.5rem;
+      }
+
+      .itemPrice {
+        font-size: 14px;
+        color: #777;
+        margin-bottom: 1rem;
+      }
+
+      .quantityControls {
+        display: flex;
+        align-items: center;
+
+        .quantityButton {
+          width: 30px;
+          height: 30px;
+          border: 1px solid #ddd;
+          background-color: #f7f7f7;
+          cursor: pointer;
+          font-size: 16px;
+          text-align: center;
+
+          &:hover {
+            background-color: #eee;
+          }
+        }
+
+        .quantity {
+          margin: 0 10px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .removeButton {
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #ff2d2d;
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f7f7f7;
+  border-top: 1px solid #ddd;
+  border-radius: 8px;
+
+  .totalPrice {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      color: #777;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #333;
+      font-weight: bold;
+    }
+  }
+
+  .checkoutButton {
+    background-color: #c2831e;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #996504;
+    }
+  }
+}
+
+.emptyCartMessage {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+}
